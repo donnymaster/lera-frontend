@@ -1,0 +1,219 @@
+.two-column {
+    display: flex;
+}
+.two-column__filter {
+    margin-top: 50px;
+    margin-right: 40px;
+}
+.filter__title {
+    background-color: burlywood;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #3F3356;
+    padding: 5px;
+}
+form.form-filter {
+    border: 2px solid #ECEBED;
+    width: 200px;
+}
+
+.status-title {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: black;
+    background-color: #7ddfc3;
+    padding: 9px;
+    border-bottom: 2px solid #ECEBED;
+}
+.form-filter__status{
+    border-bottom: 2px solid #ECEBED;
+}
+.broad-status {
+    padding: 7px 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 29px;
+}
+.radio-btn {
+    display: none;
+}
+// radio input
+.is-radio{
+    position: relative;
+}
+.is-radio::after {
+    content: "";
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #A5AFFB;
+    box-sizing: border-box;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    left: -25px;
+}
+// 
+.radio-btn:checked + .is-radio::after{
+    background-image: url("../img/Inactive.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.two-column__elements {
+    margin-top: 50px;
+}
+
+.elements__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0084F4;
+}
+.title-header {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.form-sort-items {
+    display: flex;
+    align-items: center;
+}
+.fort-sort-title{
+    margin: 0;
+    margin-right: 10px;
+}
+.broadcast__item {
+    margin-top: 25px;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.27);
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+}
+.desc_broadcast__title {
+    font-size: 22px;
+    line-height: 28px;
+    color: #0084F4;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.desc_broadcast__desc {
+    text-align: justify;
+    line-height: 21px;
+}
+
+.status-noty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img.notify-img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.logo_broadcast {
+    position: relative;
+    width: 250px;
+    height: 150px;
+}
+.broad-fon{
+    width: 250px;
+    height: 150px;
+}
+.status-broadcast {
+    position: absolute;
+    top: 0;
+    /* left: 2px; */
+    border-bottom-right-radius: 6px;
+    background-color: rgba(0,0,0, .5);
+}
+.img-status {
+    width: 40px;
+    height: 40px;
+}
+
+.desc_broadcast {
+    padding: 10px;
+}
+
+.desc_broadcast__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sort-items-form{
+    background: #FFFFFF;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    padding: 5px;
+}
+.broadcast-wrapped {
+    margin-bottom: 40px;
+}
+
+// checkbox
+.checkbox-btn{
+    display: none;
+}
+.is-checkbox{
+    position: relative;
+}
+.is-checkbox::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #ECEBED;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+    left: -25px;
+}
+
+.checkbox-btn:checked + .is-checkbox::after{
+    background-image: url("../img/Check.png");
+    // background: #FFFFFF;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+//
+.update-filter {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #ECEBED;
+    padding: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .two-column{
+        flex-direction: column;
+        align-items: center;
+    }
+    .two-column__filter{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .broadcast__item{
+        flex-direction: column;
+    }
+    .logo_broadcast{
+        width: auto;
+    }
+    .broad-fon{
+        width: 100%;
+    }
+}
+
+

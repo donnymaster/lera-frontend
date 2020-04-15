@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="wrapped">
+                <div class="login">
+                    <div class="login__title">Реєстрація</div>
+                    <form action="#" class="login__form">
+                       <label class="login__input-text" for="name">Ім'я</label>
+                       <input type="text" id="name" name="name" class="login__input">
+                       <label class="login__input-text" for="login">Логін</label>
+                       <input type="text" id="login" name="login" class="login__input">
+                       <label class="login__input-text" for="password">Пароль</label>
+                       <input type="password" id="password" name="password" class="login__input">
+                       <label class="login__input-text" for="email">Пошта</label>
+                       <input type="email" id="email" name="email" class="login__input">
+                       <div class="register__avatar">
+                           <div class="register__avatar-title">
+                            Аватар
+                           </div>
+                           <div class="register__avatar-images">
+                               <div class="register__avatar-image-item register__avatar-image-item--men">
+                                <img src="assets/img/men.png" alt="men" id="men" class="register__avatar-image">
+                               </div>
+                               <div class="register__avatar-image-item register__avatar-image-item--girl">
+                                <img src="assets/img/girl.png" alt="girl" id="girl" class="register__avatar-image">
+                               </div>
+                               <div class="register__avatar-image-item">
+                                <img src="assets/img/other.png" alt="other" id="other" class="register__avatar-image">
+                                </div>                           
+                           </div>
+                       </div>
+                       <input type="text" name="default_image" id="default_image" hidden value>
+                       <input type="file" name="img" id="img_file" hidden accept=".jpg, .jpeg, .png">
+                       <div class="form__footer">
+                        <div class="login__account">
+                            <a href="/login.html" class="login__account-link">Аккаунт є?</a> </div>
+                       </div>
+                        <button class="form__btn">Увійти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

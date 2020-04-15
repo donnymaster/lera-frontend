@@ -1,0 +1,27 @@
+.register__avatar-title {
+    text-align: center;
+    padding: 10px;
+}
+.register__avatar-images {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+.register__avatar-image-item{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    height: 42px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 42px;
+}
+.register__avatar-image-item--line{
+    border: 2px solid red;
+}
+.register__avatar-image-item:hover{
+    cursor: pointer;
+}

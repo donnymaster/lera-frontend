@@ -1,0 +1,114 @@
+.wrapped__nav {
+    border-bottom: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    z-index: 999;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.nav__menu {
+    margin-left: auto;
+    margin-right: 20px;
+}
+.menu__item {
+    color: rgba(0, 0, 0, 1);
+    margin: 10px 0 10px 25px;
+    padding-bottom: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu-item__link {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+.btn{
+    background-color: #7DDFC3;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.btn:active{
+    background-color: #00C48C;
+}
+.header{
+    background: url("../img/main-fon.jpg");
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.offer__title {
+    font-size: 34px;
+    line-height: 41px;
+    color: white;
+    padding: 30px 0;
+}
+.offer_desc {
+    max-width: 700px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+}
+.details{
+    display: inline-block;
+    font-size: 18px;
+    background-color: #FFE29D;
+    text-decoration: none;
+    color: black;
+}
+.details:active{
+    background-color: #FFCF5C;
+}
+.logo__site {
+    height: 45px;
+}
+
+.user-logo-img{
+    cursor: pointer;
+}
+.user-logo{
+    position: relative;
+}
+.user-menu {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.menu-item {
+    padding: 5px;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 7px;
+    text-align: center;
+    background-color: #e5e5e5;
+    font-weight: 400;
+    width: 200px;
+}
+
+
+// media query
+
+@media (max-width: 768px) {
+    .header{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .offer_desc {
+        text-align: justify;
+    }
+}

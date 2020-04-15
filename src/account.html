@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккаунт</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <header class="header h-auto">
+          <nav class="wrapped__nav">
+              <div class="container">
+                 <div class="nav">
+                    <div class="nav__logo">
+                        <img src="assets/img/logo_end.png" alt="logo-site" class="logo__site">
+                    </div>
+                    <div class="nav__menu">
+                        <a href="/broadcasts.html" class="menu__item line-link">ТРАНСЛЯЦІЇ</a>
+                        <a href="/teams.html" class="menu__item line-link">КОМАНДИ</a>
+                        <a href="/players.html" class="menu__item line-link">СПОРТСМЕНИ</a>
+                    </div>
+                    <div class="nav__btn">
+                      <!-- <a href="/login.html" class="btn">
+                          Вхід
+                      </a>
+                      <a href="/register.html" class="btn m-l-10">
+                          Реєстрація
+                      </a> -->
+                      <div class="user-logo">
+                          <img class="user-logo-img" src="assets/img/men.png" alt="user-logo">
+                          <div class="user-menu d-none">
+                              <ul class="menu-items">
+                                  <li class="menu-item">
+                                      <a class="menu-item__link" href="#">Личный аккаунт</a>
+                                  </li>
+                                  <li class="menu-item">
+                                   <a class="menu-item__link" href="/feedback.html">Связь с администрацией</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-item__link" href="#">Выход</a>
+                                </li>
+                                
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+          </nav>
+      </header>
+      
+        <div class="container">
+            <div class="account-breadcrumbs">
+                <a href="/index.html" class="link-breadcrumbs">
+                    Главная
+                </a>
+                <img src="assets/img/chevron-right.png" alt="arr" class="right-arrow">
+                <a href="#" class="link-breadcrumbs">
+                    Аккаунт
+                </a>
+            </div>
+        </div>
+
+      <div class="container">
+        <div class="two-column">
+            <div class="two-column__filter">
+              <div class="account-tabs">
+                <div class="account-tabs--title">
+                    Ваши настройки
+                </div>
+                <div class="account-tabs--body">
+                    <div class="tabs-nav__item is-active" data-tab-name="1">
+                        Личные настройки
+                    </div>
+                    <div class="tabs-nav__item" data-tab-name="2">
+                        Уведомления
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="two-column__elements flex-1">
+                   <div class="account-settings">
+                       <div class="account-settings__title">
+                        Настройки
+                       </div>
+                       <div class="account-settings__body">
+                        <div class="tab tab-1 is-active">
+                            <form action="#" class="login__form">
+                                <label class="login__input-text" for="name">Ім'я</label>
+                                <input type="text" id="name" name="name" class="login__input">
+                                <label class="login__input-text" for="login">Логін</label>
+                                <input type="text" id="login" name="login" class="login__input">
+                                <label class="login__input-text" for="password">Пароль</label>
+                                <input type="password" id="password" name="password" class="login__input">
+                                <label class="login__input-text" for="email">Пошта</label>
+                                <input type="email" id="email" name="email" class="login__input">
+                                <div class="register__avatar">
+                                    <div class="register__avatar-title">
+                                     Аватар
+                                    </div>
+                                    <div class="register__avatar-images">
+                                        <div class="register__avatar-image-item register__avatar-image-item--men">
+                                         <img src="assets/img/men.png" alt="men" id="men" class="register__avatar-image">
+                                        </div>
+                                        <div class="register__avatar-image-item register__avatar-image-item--girl">
+                                         <img src="assets/img/girl.png" alt="girl" id="girl" class="register__avatar-image">
+                                        </div>
+                                        <div class="register__avatar-image-item">
+                                         <img src="assets/img/other.png" alt="other" id="other" class="register__avatar-image">
+                                         </div>                           
+                                    </div>
+                                </div>
+                                <input type="text" name="default_image" id="default_image" hidden value>
+                                <input type="file" name="img" id="img_file" hidden accept=".jpg, .jpeg, .png">
+                               <div class="wrapped-form-btn">
+                                <button class="update-btn">Обновить</button>
+                               </div>
+                             </form>
+                        </div>
+                        <div class="tab tab-2">
+                            <div class="account-notify-items">
+                                <div class="notify-item">
+                                    <div class="wrapped-img-delete-notify">
+                                        <img src="https://via.placeholder.com/250x150" alt="img" class="notify-img-account">
+                                        <form action="#" class="delete-notify">
+                                            <img src="assets/img/delete.png" alt="delete" class="delete-notify">
+                                        </form>
+                                    </div>
+                                    <div class="wrap-link">
+                                    <a href="/broadcast-1.html" class="notify-name line-link">                                   
+                                        Lorem ipsum dolor
+                                   </a>
+                                   </div>
+                                   <input type="text" hidden value="" class="hide-date">
+                                   <div class="title-timer-notify">
+                                        До начала осталось 
+                                   </div>
+                                   <div class="notify-end">
+                                       12:01:12
+                                   </div>
+                                   <div class="notify-desc-account">
+                                       Lorem ipsum dolor sit amet consectetur 
+                                       adipisicing elit. Odio inventore 
+                                       libero ut repudiandae numquam 
+                                       perspiciatis quasi, nemo eius cum 
+                                       nobis eveniet unde commodi beatae.
+                                   </div>
+                                </div>
+                                <div class="notify-item">
+                                    <div class="wrapped-img-delete-notify">
+                                        <img src="https://via.placeholder.com/250x150" alt="img" class="notify-img-account">
+                                        <form action="#" class="delete-notify">
+                                            <img src="assets/img/delete.png" alt="delete" class="delete-notify">
+                                        </form>
+                                    </div>
+                                    <div class="wrap-link">
+                                    <a href="/broadcast-1.html" class="notify-name line-link">                                   
+                                        Lorem ipsum dolor
+                                   </a>
+                                   </div>
+                                   <input type="text" hidden value="" class="hide-date">
+                                   <div class="title-timer-notify">
+                                        До начала осталось 
+                                   </div>
+                                   <div class="notify-end">
+                                       12:01:12
+                                   </div>
+                                   <div class="notify-desc-account">
+                                       Lorem ipsum dolor sit amet consectetur 
+                                       adipisicing elit. Odio inventore 
+                                       libero ut repudiandae numquam 
+                                       perspiciatis quasi, nemo eius cum 
+                                       nobis eveniet unde commodi beatae.
+                                   </div>
+                                </div>
+                                <div class="notify-item">
+                                    <div class="wrapped-img-delete-notify">
+                                        <img src="https://via.placeholder.com/250x150" alt="img" class="notify-img-account">
+                                        <form action="#" class="delete-notify">
+                                            <img src="assets/img/delete.png" alt="delete" class="delete-notify">
+                                        </form>
+                                    </div>
+                                    <div class="wrap-link">
+                                    <a href="/broadcast-1.html" class="notify-name line-link">                                   
+                                        Lorem ipsum dolor
+                                   </a>
+                                   </div>
+                                   <input type="text" hidden value="" class="hide-date">
+                                   <div class="title-timer-notify">
+                                        До начала осталось 
+                                   </div>
+                                   <div class="notify-end">
+                                       12:01:12
+                                   </div>
+                                   <div class="notify-desc-account">
+                                       Lorem ipsum dolor sit amet consectetur 
+                                       adipisicing elit. Odio inventore 
+                                       libero ut repudiandae numquam 
+                                       perspiciatis quasi, nemo eius cum 
+                                       nobis eveniet unde commodi beatae.
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+            </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+            <div class="nav h-70">
+               <div class="nav__logo">
+                   <img src="assets/img/logo_end.png" alt="logo-site" class="logo__site">
+               </div>
+               <div class="copyright-footer">
+                    @ 2020 Broadcasts
+                </div>
+               <div class="social-media">
+                    <a href="" class="social-media__item">
+                        <img src="assets/img/facebook.png" alt="facebook" class="social-img">
+                    </a>
+                    <a href="" class="social-media__item">
+                        <img src="assets/img/instagram.png" alt="instagram" class="social-img">
+                    </a>
+                    <a href="" class="social-media__item">
+                        <img src="assets/img/twitter.png" alt="twitter" class="social-img">
+                    </a>
+                   
+               </div>
+            </div>
+         </div>
+      </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/timezz.min.js"></script>
+  <script>
+    //   var date = document.
+  </script>
+</body>
+</html>

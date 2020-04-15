@@ -1,0 +1,103 @@
+.logo-teams{
+    background: url("../img/team-fon.jpg");
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: darken;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team-wrapped{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.card-teams-item {
+    position: relative;
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    border: 1px solid #ecebed;
+}
+.card-teams-item--link{
+    position: absolute;
+    visibility: hidden;
+    transition: all .6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card-link-arrow{
+    transition: opacity .6s;
+    opacity: 0;
+}
+
+
+.card-teams-item:hover .card-link-arrow{
+    transition: opacity .6s;
+    opacity: 1;
+}
+
+.card-teams-item:hover .card-teams-item--link {
+    transition: all .6s;
+    visibility: visible;
+    background-color: rgba($color: black, $alpha: .5);
+}
+.card-teams-title {
+    text-align: center;
+    /* margin: 7px; */
+    font-size: 17px;
+    padding: 7px;
+    font-weight: 600;
+    border-bottom: 1px solid #ecebed;
+}
+.card-teams-info {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.card-teams-info__sport {
+    background: #E5E7FA;
+    border-radius: 4px;
+    padding: 7px;
+    color: #6979F8;
+    font-weight: 500;
+}
+.card-teams-desc {
+    padding: 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+.card-teams-info__city {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #3B3D43;
+}
+
+@media (max-width: 1200px) {
+    .team-wrapped{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 320px){
+    .elements__header{
+        flex-direction: column;
+    }
+    .title-header{
+        padding-bottom: 10px;
+    }
+}
